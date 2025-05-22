@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         siteName: "Tom Dowling's Frontend Portfolio",
         images: [
             {
-                url: "https://yourportfolio.com/images/work-history-og.jpg",
+                url: "https://yourportfolio.com/images/og-image-work-experience.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Tom Dowling's Professional Work History"

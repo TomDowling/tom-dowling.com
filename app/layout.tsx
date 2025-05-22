@@ -5,7 +5,7 @@ import { Code2 } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Tom Dowling | Senior React Frontend Developer & Consultant", // Use your actual name
+    title: "Tom Dowling | Senior React Frontend Developer & Consultant",
     description:
         "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
     keywords:
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
         title: "Tom Dowling | Senior React Frontend Developer & Consultant",
         description:
             "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
-        url: "https://tom-dowling.com/", // Replace with your actual domain
+        url: "https://tom-dowling.com/",
         siteName: "Tom Dowling's Frontend Portfolio",
         images: [
             {
-                url: "https://yourportfolio.com/images/og-image.jpg", // Path to a compelling image for social sharing
+                url: "https://tom-dowling.com/images/og-image-homepage.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Tom Dowling's Frontend Portfolio"
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         title: "Tom Dowling | Senior React Frontend Developer & Consultant",
         description:
             "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
-        images: ["https://yourportfolio.com/images/og-image.jpg"] // Same image as Open Graph
+        images: ["https://tom-dowling.com/images/og-image-homepage.jpg"]
     }
 };
 
@@ -53,21 +53,23 @@ export default function RootLayout({
                             </div>
                             <div className="flex flex-1 items-center justify-end space-x-4">
                                 <nav className="flex items-center space-x-2 md:space-x-6">
-                                    <Link href="#services" className="text-sm font-medium hover:text-rose-500 transition-colors">
+                                    <Link href="/#services" className="text-sm font-medium hover:text-rose-500 transition-colors">
                                         Services
                                     </Link>
-                                    <Link href="#portfolio" className="text-sm font-medium hover:text-rose-500 transition-colors">
+                                    <Link href="/#portfolio" className="text-sm font-medium hover:text-rose-500 transition-colors">
                                         Portfolio
                                     </Link>
-                                    <Link href="#about" className="text-sm font-medium hover:text-rose-500 transition-colors">
+                                    <Link href="/work-experience" className="text-sm font-medium hover:text-rose-500 transition-colors">
+                                        Work Experience
+                                    </Link>
+                                    <Link href="/#about" className="text-sm font-medium hover:text-rose-500 transition-colors">
                                         About
                                     </Link>
-                                    <Link href="#contact" className="text-sm font-medium hover:text-rose-500 transition-colors">
-                                        Contact
+                                    <Link href="/#contact" className="text-sm font-medium hover:text-rose-500 transition-colors">
+                                        <Button variant="default" className="bg-rose-500 hover:bg-rose-600">
+                                            Hire Me
+                                        </Button>
                                     </Link>
-                                    <Button variant="default" className="bg-rose-500 hover:bg-rose-600">
-                                        Hire Me
-                                    </Button>
                                 </nav>
                             </div>
                         </div>

@@ -23,8 +23,12 @@ export default function Home() {
                                     </p>
                                 </div>
                                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                                    <Button className="bg-rose-500 hover:bg-rose-600">View My Work</Button>
-                                    <Button variant="outline">Get in Touch</Button>
+                                    <Link href="/work-experience">
+                                        <Button className="bg-rose-500 hover:bg-rose-600">View My Experience</Button>
+                                    </Link>
+                                    <Link href="/#contact">
+                                        <Button variant="outline">Get in Touch</Button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex items-center justify-center">
@@ -257,9 +261,9 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center">
+                        {/* <div className="flex justify-center">
                             <Button className="bg-rose-500 hover:bg-rose-600">View All Projects</Button>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
@@ -398,7 +402,9 @@ export default function Home() {
                                 </div>
                                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                                     <Button className="bg-rose-500 hover:bg-rose-600">Download Resume</Button>
-                                    <Button variant="outline">My GitHub</Button>
+                                    <Link href="https://github.com/TomDowling/" target="_blank">
+                                        <Button variant="outline">My GitHub</Button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -424,7 +430,9 @@ export default function Home() {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold">Email</h3>
-                                        <p className="text-sm text-muted-foreground">hello@reactdev.com</p>
+                                        <Link href="mailto:tom@digital-space.io">
+                                            <p className="text-sm text-muted-foreground">tom@digital-space.io</p>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-3">
@@ -434,15 +442,21 @@ export default function Home() {
                                     <div>
                                         <h3 className="font-semibold">Social Media</h3>
                                         <div className="flex gap-2 mt-1">
-                                            <Link href="#" className="text-muted-foreground hover:text-rose-500">
+                                            {/* <Link href="#" className="text-muted-foreground hover:text-rose-500">
                                                 <Twitter className="h-5 w-5" />
                                                 <span className="sr-only">Twitter</span>
-                                            </Link>
-                                            <Link href="#" className="text-muted-foreground hover:text-rose-500">
+                                            </Link> */}
+                                            <Link
+                                                href="https://github.com/TomDowling/"
+                                                className="text-muted-foreground hover:text-rose-500"
+                                                target="_blank">
                                                 <Github className="h-5 w-5" />
                                                 <span className="sr-only">GitHub</span>
                                             </Link>
-                                            <Link href="#" className="text-muted-foreground hover:text-rose-500">
+                                            <Link
+                                                href="https://www.linkedin.com/in/dowling-tom/"
+                                                className="text-muted-foreground hover:text-rose-500"
+                                                target="_blank">
                                                 <Linkedin className="h-5 w-5" />
                                                 <span className="sr-only">LinkedIn</span>
                                             </Link>
@@ -534,21 +548,24 @@ export default function Home() {
                 <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
                     <div className="flex gap-2 items-center text-xl font-bold">
                         <Code2 className="h-6 w-6 text-rose-500" />
-                        <span>ReactDev</span>
+                        <span>Tom Dowling</span>
                     </div>
                     <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                        &copy; {new Date().getFullYear()} ReactDev. All rights reserved.
+                        &copy; {new Date().getFullYear()} Tom Dowling. All rights reserved.
                     </p>
                     <div className="flex gap-4">
-                        <Link href="#" className="text-muted-foreground hover:text-rose-500">
+                        {/* <Link href="#" className="text-muted-foreground hover:text-rose-500">
                             <Twitter className="h-5 w-5" />
                             <span className="sr-only">Twitter</span>
-                        </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-rose-500">
+                        </Link> */}
+                        <Link href="https://github.com/TomDowling/" className="text-muted-foreground hover:text-rose-500" target="_blank">
                             <Github className="h-5 w-5" />
                             <span className="sr-only">GitHub</span>
                         </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-rose-500">
+                        <Link
+                            href="https://www.linkedin.com/in/dowling-tom/"
+                            className="text-muted-foreground hover:text-rose-500"
+                            target="_blank">
                             <Linkedin className="h-5 w-5" />
                             <span className="sr-only">LinkedIn</span>
                         </Link>
