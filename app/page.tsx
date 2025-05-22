@@ -35,7 +35,7 @@ export default function Home() {
                             <div className="relative h-[350px] w-[350px] rounded-full bg-gradient-to-b from-rose-500 to-orange-300 p-1">
                                 <div className="absolute inset-1 rounded-full bg-background flex items-center justify-center">
                                     <Image
-                                        src="/avatar.jpg"
+                                        src="/assets/images/avatar.jpg"
                                         width={300}
                                         height={300}
                                         alt="Tom Dowling"
@@ -122,7 +122,7 @@ export default function Home() {
                     <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
                         <div className="group relative overflow-hidden rounded-lg border">
                             <Image
-                                src="/placeholder.svg?height=400&width=600"
+                                src="/assets/images/placeholder.svg?height=400&width=600"
                                 width={600}
                                 height={400}
                                 alt="E-commerce project"
@@ -144,7 +144,7 @@ export default function Home() {
                         </div>
                         <div className="group relative overflow-hidden rounded-lg border">
                             <Image
-                                src="/placeholder.svg?height=400&width=600"
+                                src="/assets/images/placeholder.svg?height=400&width=600"
                                 width={600}
                                 height={400}
                                 alt="Dashboard project"
@@ -274,7 +274,7 @@ export default function Home() {
                             <div className="rounded-lg border bg-background p-6 shadow-sm">
                                 <div className="flex items-start gap-4">
                                     <Image
-                                        src="/placeholder.svg?height=100&width=100"
+                                        src="/assets/images/placeholder.svg?height=100&width=100"
                                         width={60}
                                         height={60}
                                         alt="Client portrait"
@@ -293,7 +293,7 @@ export default function Home() {
                             <div className="rounded-lg border bg-background p-6 shadow-sm">
                                 <div className="flex items-start gap-4">
                                     <Image
-                                        src="/placeholder.svg?height=100&width=100"
+                                        src="/assets/images/placeholder.svg?height=100&width=100"
                                         width={60}
                                         height={60}
                                         alt="Client portrait"
@@ -312,7 +312,7 @@ export default function Home() {
                             <div className="rounded-lg border bg-background p-6 shadow-sm">
                                 <div className="flex items-start gap-4">
                                     <Image
-                                        src="/placeholder.svg?height=100&width=100"
+                                        src="/assets/images/placeholder.svg?height=100&width=100"
                                         width={60}
                                         height={60}
                                         alt="Client portrait"
@@ -331,7 +331,7 @@ export default function Home() {
                             <div className="rounded-lg border bg-background p-6 shadow-sm">
                                 <div className="flex items-start gap-4">
                                     <Image
-                                        src="/placeholder.svg?height=100&width=100"
+                                        src="/assets/images/placeholder.svg?height=100&width=100"
                                         width={60}
                                         height={60}
                                         alt="Client portrait"
@@ -356,10 +356,10 @@ export default function Home() {
                     <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
                         <div className="flex items-center justify-center">
                             <Image
-                                src="/avatar.jpg"
+                                src="/assets/images/avatar.jpg"
                                 width={500}
                                 height={500}
-                                alt="Developer portrait"
+                                alt="Tom Dowling"
                                 className="rounded-lg object-cover"
                             />
                         </div>
