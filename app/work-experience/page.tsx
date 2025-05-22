@@ -13,11 +13,11 @@ export const metadata: Metadata = {
         title: "Professional Work History | Tom Dowling's Frontend Career",
         description:
             "A detailed timeline of Tom Dowling's professional journey as a Senior Frontend Developer, highlighting extensive experience in React, Next.js, frontend architecture, and large-scale application development.",
-        url: "https://portfolio-eight-delta-39.vercel.app/work-history",
+        url: "https://tom-dowling.com/work-history",
         siteName: "Tom Dowling's Frontend Portfolio",
         images: [
             {
-                url: "https://portfolio-eight-delta-39.vercel.app/assets/images/og/work-experience.jpg",
+                url: "https://tom-dowling.com/assets/images/og/work-experience.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Tom Dowling's Professional Work History"
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         title: "Professional Work History | Tom Dowling's Frontend Career",
         description:
             "A detailed timeline of Tom Dowling's professional journey as a Senior Frontend Developer, highlighting extensive experience in React, Next.js, frontend architecture, and large-scale application development.",
-        images: ["https://portfolio-eight-delta-39.vercel.app/assets/images/og/work-experience.jpg"]
+        images: ["https://tom-dowling.com/assets/images/og/work-experience.jpg"]
     }
 };
 

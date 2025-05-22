@@ -15,11 +15,11 @@ export const metadata: Metadata = {
         title: "Tom Dowling | Senior React Frontend Developer & Consultant",
         description:
             "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
-        url: "https://portfolio-eight-delta-39.vercel.app/",
+        url: "https://tom-dowling.com/",
         siteName: "Tom Dowling's Frontend Portfolio",
         images: [
             {
-                url: "https://portfolio-eight-delta-39.vercel.app/assets/images/og/homepage.jpg",
+                url: "https://tom-dowling.com/assets/images/og/homepage.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Tom Dowling's Frontend Portfolio"
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         title: "Tom Dowling | Senior React Frontend Developer & Consultant",
         description:
             "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
-        images: ["https://portfolio-eight-delta-39.vercel.app/assets/images/og/homepage.jpg"]
+        images: ["https://tom-dowling.com/assets/images/og/homepage.jpg"]
     }
 };
 
