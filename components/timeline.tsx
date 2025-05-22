@@ -9,80 +9,6 @@ type WorkExperience = {
     responsibilities: string[];
 };
 
-export function TimelineA() {
-    // Replace with your actual work experience
-    const experiences: WorkExperience[] = [
-        {
-            company: "Acme Corporation",
-            position: "Senior Software Engineer",
-            dateRange: "Jan 2020 - Present",
-            responsibilities: [
-                "Led the development of a new customer-facing application that increased user engagement by 35%",
-                "Mentored junior developers and conducted code reviews to maintain high code quality standards",
-                "Implemented CI/CD pipelines that reduced deployment time by 40% and improved overall system reliability"
-            ]
-        },
-        {
-            company: "Tech Innovations Inc.",
-            position: "Software Developer",
-            dateRange: "Mar 2017 - Dec 2019",
-            responsibilities: [
-                "Developed and maintained RESTful APIs serving over 10,000 daily active users",
-                "Collaborated with cross-functional teams to deliver features on time and within scope",
-                "Optimized database queries resulting in a 25% improvement in application performance"
-            ]
-        },
-        {
-            company: "Digital Solutions LLC",
-            position: "Junior Developer",
-            dateRange: "Jun 2015 - Feb 2017",
-            responsibilities: [
-                "Assisted in the development of responsive web applications using React and Node.js",
-                "Participated in daily stand-ups and sprint planning to ensure project milestones were met",
-                "Debugged and fixed issues in legacy code, improving system stability by 15%"
-            ]
-        }
-    ];
-
-    return (
-        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-            {experiences.map((experience, index) => (
-                <div key={index} className="relative flex items-start md:justify-center">
-                    <div className="absolute left-0 md:left-1/2 ml-2 md:-ml-3 mt-7 h-6 w-6 rounded-full border-4 border-white bg-primary shadow-md" />
-
-                    <Card
-                        className={`w-full md:w-[calc(50%-2rem)] ${
-                            index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
-                        } shadow-md hover:shadow-lg transition-shadow duration-300`}>
-                        <CardHeader className="pb-2">
-                            <div className="flex justify-between items-center">
-                                <CardTitle className="text-xl font-bold text-primary">{experience.company}</CardTitle>
-                                <Badge variant="outline" className="flex items-center gap-1">
-                                    <Calendar className="h-3 w-3" />
-                                    <span>{experience.dateRange}</span>
-                                </Badge>
-                            </div>
-                            <div className="flex items-center gap-1 text-muted-foreground">
-                                <Briefcase className="h-4 w-4" />
-                                <span className="font-medium">{experience.position}</span>
-                            </div>
-                        </CardHeader>
-                        <CardContent>
-                            <ul className="list-disc pl-5 space-y-2">
-                                {experience.responsibilities.map((responsibility, idx) => (
-                                    <li key={idx} className="text-sm text-muted-foreground">
-                                        {responsibility}
-                                    </li>
-                                ))}
-                            </ul>
-                        </CardContent>
-                    </Card>
-                </div>
-            ))}
-        </div>
-    );
-}
-
 export function Timeline() {
     const experiences: WorkExperience[] = [
         {
@@ -158,17 +84,17 @@ export function Timeline() {
     ];
 
     return (
-        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-rose-300 before:to-transparent">
+        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:sm:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-rose-300 before:to-transparent">
             {experiences.map((experience, index) => (
                 <div key={index} className="relative flex items-start md:justify-center">
-                    <div className="absolute left-0 md:left-1/2 ml-2 md:-ml-3 mt-7 h-6 w-6 rounded-full border-4 border-white bg-rose-500 shadow-md" />
+                    <div className="absolute -left-1 sm:left-0 md:left-1/2 sm:ml-2 md:-ml-3 mt-7 h-6 w-6 rounded-full border-4 border-white bg-rose-500 shadow-md" />
 
                     <Card
-                        className={`w-full md:w-[calc(50%-2rem)] ${
+                        className={`w-full md:w-[calc(50%-2rem)] ml-8 sm:ml-0 ${
                             index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
                         } shadow-md hover:shadow-lg transition-shadow duration-300`}>
                         <CardHeader className="pb-2">
-                            <div className="flex justify-between items-center">
+                            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
                                 <CardTitle className="text-xl font-bold text-rose-500">{experience.company}</CardTitle>
                                 <Badge variant="outline" className="flex items-center gap-1 border-rose-200 text-rose-700 bg-rose-50">
                                     <Calendar className="h-3 w-3" />

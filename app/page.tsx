@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Code2, Cpu, Github, Linkedin, Mail, MessageSquare, Rocket, Twitter, Zap } from "lucide-react";
+import ContactForm from "@/components/contact-form";
 
 export default function Home() {
     return (
@@ -129,17 +130,19 @@ export default function Home() {
                                     className="aspect-video object-cover transition-all group-hover:scale-105"
                                 />
                                 <div className="p-4">
-                                    <h3 className="font-bold">E-commerce Platform</h3>
+                                    <h3 className="font-bold">All in One Gym Solution (coming soon)</h3>
                                     <p className="text-sm text-muted-foreground">
-                                        A full-featured online store built with React, Next.js, and Stripe integration.
+                                        Cross-platform web and mobile application built with Next & React Native for fitness tracking.
                                     </p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">React</span>
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
+                                            React Native
+                                        </span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
                                             Next.js
                                         </span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            Stripe
+                                            Node.js
                                         </span>
                                     </div>
                                 </div>
@@ -153,109 +156,110 @@ export default function Home() {
                                     className="aspect-video object-cover transition-all group-hover:scale-105"
                                 />
                                 <div className="p-4">
-                                    <h3 className="font-bold">Analytics Dashboard</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Interactive dashboard with real-time data visualization using React and D3.js.
-                                    </p>
+                                    <h3 className="font-bold">MUI Calendar (coming soon)</h3>
+                                    <p className="text-sm text-muted-foreground">Maybe a npm package for a mui responsive calendar?</p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">MUI</span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">React</span>
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">D3.js</span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            WebSockets
+                                            Date FNS
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="group relative overflow-hidden rounded-lg border">
                                 <Image
-                                    src="/placeholder.svg?height=400&width=600"
+                                    src="/assets/images/portfolio/expo-build-notifier.png"
                                     width={600}
                                     height={400}
-                                    alt="Mobile app project"
+                                    alt="Expo Build Notifier NPM Page Screenshot"
                                     className="aspect-video object-cover transition-all group-hover:scale-105"
                                 />
                                 <div className="p-4">
-                                    <h3 className="font-bold">Fitness Mobile App</h3>
+                                    <h3 className="font-bold">Expo Build Notifier</h3>
                                     <p className="text-sm text-muted-foreground">
-                                        Cross-platform mobile application built with React Native for fitness tracking.
+                                        Before Expo changed it's build process I created the NPM package Expo Build Notifier to help notifiy
+                                        users of the completion of a build in Slack, Telegram & Discord
                                     </p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            React Native
+                                            NPM Package
                                         </span>
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">Redux</span>
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">Slack</span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            Firebase
+                                            Discord
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="group relative overflow-hidden rounded-lg border">
                                 <Image
-                                    src="/placeholder.svg?height=400&width=600"
+                                    src="/assets/images/portfolio/demo-1.png"
                                     width={600}
                                     height={400}
-                                    alt="SaaS project"
+                                    alt="Demo 1 webapp screenshot"
                                     className="aspect-video object-cover transition-all group-hover:scale-105"
                                 />
                                 <div className="p-4">
-                                    <h3 className="font-bold">SaaS Platform</h3>
+                                    <h3 className="font-bold">Demo 1</h3>
                                     <p className="text-sm text-muted-foreground">
-                                        Subscription-based service with user authentication and payment processing.
+                                        Pixel Perfect Implementation! Following a figma design I created this site pixel perfect to the
+                                        design.
                                     </p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">React</span>
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">Figma</span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            Next.js
-                                        </span>
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">Auth0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="group relative overflow-hidden rounded-lg border">
-                                <Image
-                                    src="/placeholder.svg?height=400&width=600"
-                                    width={600}
-                                    height={400}
-                                    alt="Social media project"
-                                    className="aspect-video object-cover transition-all group-hover:scale-105"
-                                />
-                                <div className="p-4">
-                                    <h3 className="font-bold">Social Media Platform</h3>
-                                    <p className="text-sm text-muted-foreground">
-                                        Community platform with real-time messaging and content sharing.
-                                    </p>
-                                    <div className="mt-4 flex gap-2 flex-wrap">
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">React</span>
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            GraphQL
-                                        </span>
-                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            Socket.io
+                                            Pixel Perfect
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="group relative overflow-hidden rounded-lg border">
                                 <Image
-                                    src="/placeholder.svg?height=400&width=600"
+                                    src="/assets/images/portfolio/demo-2.png"
                                     width={600}
                                     height={400}
-                                    alt="AI project"
+                                    alt="Demo 2 webapp screenshot"
                                     className="aspect-video object-cover transition-all group-hover:scale-105"
                                 />
                                 <div className="p-4">
-                                    <h3 className="font-bold">AI Content Generator</h3>
+                                    <h3 className="font-bold">Demo 2</h3>
                                     <p className="text-sm text-muted-foreground">
-                                        Web application that leverages AI to generate and edit content.
+                                        I Created a Netflix clone using no third party plugins for the carousel.
                                     </p>
                                     <div className="mt-4 flex gap-2 flex-wrap">
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">React</span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            OpenAI API
+                                            Carousel
                                         </span>
                                         <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
-                                            Tailwind CSS
+                                            Light Weight
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="group relative overflow-hidden rounded-lg border">
+                                <Image
+                                    src="/assets/images/portfolio/expo-template.png"
+                                    width={600}
+                                    height={400}
+                                    alt="Expo Template GitHub Page Screenshot"
+                                    className="aspect-video object-cover transition-all group-hover:scale-105"
+                                />
+                                <div className="p-4">
+                                    <h3 className="font-bold">Expo Template</h3>
+                                    <p className="text-sm text-muted-foreground">
+                                        When I was working with Expo a lot I noticed there wasn't any up-to-date templates, so i created an
+                                        open source one that I maintained.
+                                    </p>
+                                    <div className="mt-4 flex gap-2 flex-wrap">
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">Expo</span>
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
+                                            React Navigation
+                                        </span>
+                                        <span className="inline-block rounded-full bg-rose-100 px-3 py-1 text-xs text-rose-500">
+                                            Recoil State Management
                                         </span>
                                     </div>
                                 </div>
@@ -267,7 +271,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
@@ -357,14 +361,14 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section id="about" className="w-full py-12 md:py-24 lg:py-32">
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
                             <div className="flex items-center justify-center">
                                 <Image
-                                    src="/placeholder.svg?height=500&width=500"
+                                    src="/avatar.jpg"
                                     width={500}
                                     height={500}
                                     alt="Developer portrait"
@@ -401,7 +405,9 @@ export default function Home() {
                                     </p>
                                 </div>
                                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                                    <Button className="bg-rose-500 hover:bg-rose-600">Download Resume</Button>
+                                    <Link href="/assets/docs/cv.pdf" target="_blank">
+                                        <Button className="bg-rose-500 hover:bg-rose-600">Download CV</Button>
+                                    </Link>
                                     <Link href="https://github.com/TomDowling/" target="_blank">
                                         <Button variant="outline">My GitHub</Button>
                                     </Link>
@@ -431,7 +437,7 @@ export default function Home() {
                                     <div>
                                         <h3 className="font-semibold">Email</h3>
                                         <Link href="mailto:tom@digital-space.io">
-                                            <p className="text-sm text-muted-foreground">tom@digital-space.io</p>
+                                            <p className="text-sm text-muted-foreground hover:text-rose-500">tom@digital-space.io</p>
                                         </Link>
                                     </div>
                                 </div>
@@ -476,58 +482,20 @@ export default function Home() {
                                         </div>
                                         <div>
                                             <p className="font-medium">Location</p>
-                                            <p className="text-muted-foreground">Remote / Worldwide</p>
+                                            <p className="text-muted-foreground">Remote / Dorset, UK</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="rounded-lg border bg-background p-6 shadow-sm">
                                 <h3 className="font-semibold mb-4">Send Me a Message</h3>
-                                <form className="space-y-4">
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <div className="space-y-2">
-                                            <label
-                                                htmlFor="name"
-                                                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                                                Name
-                                            </label>
-                                            <Input id="name" placeholder="Your name" />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <label
-                                                htmlFor="email"
-                                                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                                                Email
-                                            </label>
-                                            <Input id="email" type="email" placeholder="Your email" />
-                                        </div>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <label
-                                            htmlFor="subject"
-                                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                                            Subject
-                                        </label>
-                                        <Input id="subject" placeholder="Project inquiry" />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <label
-                                            htmlFor="message"
-                                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                                            Message
-                                        </label>
-                                        <Textarea id="message" placeholder="Tell me about your project..." className="min-h-[120px]" />
-                                    </div>
-                                    <Button type="submit" className="w-full bg-rose-500 hover:bg-rose-600">
-                                        Send Message
-                                    </Button>
-                                </form>
+                                <ContactForm />
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-24 lg:py-32">
+                {/* <section className="w-full py-12 md:py-24 lg:py-32">
                     <div className="container mx-auto grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
                         <div className="space-y-2">
                             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
@@ -538,40 +506,16 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-                            <Button className="bg-rose-500 hover:bg-rose-600">Start a Project</Button>
-                            <Button variant="outline">View Portfolio</Button>
+                            <Link href="/#contact">
+                                <Button className="bg-rose-500 hover:bg-rose-600">Start a Project</Button>
+                            </Link>
+                            <Link href="/#portfolio">
+                                <Button variant="outline">View Portfolio</Button>
+                            </Link>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
-            <footer className="w-full border-t py-6 md:py-0">
-                <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-                    <div className="flex gap-2 items-center text-xl font-bold">
-                        <Code2 className="h-6 w-6 text-rose-500" />
-                        <span>Tom Dowling</span>
-                    </div>
-                    <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                        &copy; {new Date().getFullYear()} Tom Dowling. All rights reserved.
-                    </p>
-                    <div className="flex gap-4">
-                        {/* <Link href="#" className="text-muted-foreground hover:text-rose-500">
-                            <Twitter className="h-5 w-5" />
-                            <span className="sr-only">Twitter</span>
-                        </Link> */}
-                        <Link href="https://github.com/TomDowling/" className="text-muted-foreground hover:text-rose-500" target="_blank">
-                            <Github className="h-5 w-5" />
-                            <span className="sr-only">GitHub</span>
-                        </Link>
-                        <Link
-                            href="https://www.linkedin.com/in/dowling-tom/"
-                            className="text-muted-foreground hover:text-rose-500"
-                            target="_blank">
-                            <Linkedin className="h-5 w-5" />
-                            <span className="sr-only">LinkedIn</span>
-                        </Link>
-                    </div>
-                </div>
-            </footer>
         </>
     );
 }
