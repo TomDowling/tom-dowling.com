@@ -13,7 +13,7 @@ export const metadata: Metadata = {
         title: "Professional Work History | Tom Dowling's Frontend Career",
         description:
             "A detailed timeline of Tom Dowling's professional journey as a Senior Frontend Developer, highlighting extensive experience in React, Next.js, frontend architecture, and large-scale application development.",
-        url: "https://tom-dowling.com/work-history",
+        url: "https://portfolio-eight-delta-39.vercel.app/work-history",
         siteName: "Tom Dowling's Frontend Portfolio",
         images: [
             {
