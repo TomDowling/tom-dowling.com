@@ -5,6 +5,7 @@ import { Code2, Github, Linkedin, Menu } from "lucide-react"; // Import Menu ico
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Head from "next/head";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
     title: "Digital Space | Tom Dowling | Senior React & Next.js Developer",
@@ -45,6 +46,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <GoogleTagManager gtmId="GTM-P95QKTJ" />
             <Head>
                 <script
                     type="application/ld+json"
