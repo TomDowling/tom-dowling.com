@@ -6,7 +6,8 @@
         "dev": "next dev -p 3002",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "find:unused": "next-unused"
     },
     "dependencies": {
         "@hookform/resolvers": "^3.9.1",
@@ -49,7 +50,6 @@
         "next": "15.2.4",
         "next-themes": "^0.4.4",
         "react": "^19",
-        "react-day-picker": "8.10.1",
         "react-dom": "^19",
         "react-hook-form": "^7.54.1",
         "react-resizable-panels": "^2.1.7",
@@ -58,13 +58,13 @@
         "sonner": "^1.7.1",
         "tailwind-merge": "^2.5.5",
         "tailwindcss-animate": "^1.0.7",
-        "vaul": "^0.9.6",
         "zod": "^3.24.1"
     },
     "devDependencies": {
         "@types/node": "^22",
         "@types/react": "^19",
         "@types/react-dom": "^19",
+        "next-unused": "^0.0.6",
         "postcss": "^8",
         "tailwindcss": "^3.4.17",
         "typescript": "^5"
