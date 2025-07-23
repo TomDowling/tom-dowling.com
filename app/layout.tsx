@@ -4,25 +4,26 @@ import { Button } from "@/components/ui/button";
 import { Code2, Github, Linkedin, Menu } from "lucide-react"; // Import Menu icon
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Head from "next/head";
 
 export const metadata: Metadata = {
-    title: "Tom Dowling | Senior React Frontend Developer & Consultant",
+    title: "Digital Space | Tom Dowling | Senior React & Next.js Developer",
     description:
-        "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
+        "Hire Tom Dowling, a senior freelance React and Next.js developer in Dorset, UK. Specializing in scalable frontend architecture, performance optimization, and custom web application development for agencies and businesses worldwide.",
     keywords:
-        "react developer, freelance react, senior frontend, react consultant, frontend architecture, react performance, typescript, next.js, web development, bournemouth react developer",
+        "react developer, next.js developer, freelance react, senior frontend, react consultant, frontend architecture, react performance, typescript, digital space, web development, dorset, remote react developer, bournemouth react developer, frontend expert",
     openGraph: {
-        title: "Tom Dowling | Senior React Frontend Developer & Consultant",
+        title: "Digital Space | Tom Dowling | Senior React & Next.js Developer",
         description:
-            "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
-        url: "https://tom-dowling.com/",
-        siteName: "Tom Dowling's Frontend Portfolio",
+            "Hire Tom Dowling, a senior freelance React and Next.js developer in Dorset, UK. Specializing in scalable frontend architecture, performance optimization, and custom web application development for agencies and businesses worldwide.",
+        url: "https://digital-space.io/",
+        siteName: "Digital Space | Tom Dowling",
         images: [
             {
-                url: "https://tom-dowling.com/assets/images/og/homepage.jpg",
+                url: "https://digital-space.io/assets/images/og/homepage.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Tom Dowling's Frontend Portfolio"
+                alt: "Digital Space - Tom Dowling Senior React Developer"
             }
         ],
         locale: "en_GB",
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Tom Dowling | Senior React Frontend Developer & Consultant",
+        title: "Digital Space | Tom Dowling | Senior React & Next.js Developer",
         description:
-            "Hire a senior freelance React developer specializing in frontend architecture, performance optimization, and custom web application development. Delivering scalable, high-performance React solutions.",
-        images: ["https://tom-dowling.com/assets/images/og/homepage.jpg"]
+            "Hire Tom Dowling, a senior freelance React and Next.js developer in Dorset, UK. Scalable frontend architecture and high-performance web solutions.",
+        images: ["https://digital-space.io/assets/images/og/homepage.jpg"]
     }
 };
 
@@ -44,6 +45,32 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <Head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            name: "Tom Dowling",
+                            jobTitle: "Senior React & Next.js Developer",
+                            url: "https://digital-space.io/",
+                            image: "https://digital-space.io/assets/images/og/homepage.jpg",
+                            sameAs: ["https://www.linkedin.com/in/dowling-tom/", "https://github.com/TomDowling/"],
+                            worksFor: {
+                                "@type": "Organization",
+                                name: "Digital Space",
+                                url: "https://digital-space.io/"
+                            },
+                            address: {
+                                "@type": "PostalAddress",
+                                addressLocality: "Dorset",
+                                addressCountry: "UK"
+                            }
+                        })
+                    }}
+                />
+            </Head>
             <body>
                 <div className="flex min-h-screen flex-col">
                     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -55,6 +82,9 @@ export default function RootLayout({
 
                             <div className="hidden md:flex flex-1 items-center justify-end space-x-4">
                                 <nav className="flex items-center space-x-6">
+                                    <Link href="/blog" className="text-sm font-medium hover:text-rose-500 transition-colors">
+                                        Blog
+                                    </Link>
                                     <Link href="/#services" className="text-sm font-medium hover:text-rose-500 transition-colors">
                                         Services
                                     </Link>
@@ -85,6 +115,9 @@ export default function RootLayout({
                                     </SheetTrigger>
                                     <SheetContent side="right">
                                         <nav className="flex flex-col gap-4 py-6">
+                                            <Link href="/blog" className="text-lg font-medium hover:text-rose-500 transition-colors">
+                                                Blog
+                                            </Link>
                                             <Link href="/#services" className="text-lg font-medium hover:text-rose-500 transition-colors">
                                                 Services
                                             </Link>

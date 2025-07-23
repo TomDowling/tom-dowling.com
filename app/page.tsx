@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Code2, Cpu, Github, Linkedin, Mail, MessageSquare, Rocket, Twitter, Zap } from "lucide-react";
 import ContactForm from "@/components/contact-form";
 
-export default function Home() {
+export default function Page() {
     return (
         <main className="flex-1">
             <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">

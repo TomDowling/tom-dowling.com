@@ -12,9 +12,19 @@ type WorkExperience = {
 export function Timeline() {
     const experiences: WorkExperience[] = [
         {
+            company: "Digital Space",
+            position: "Founder & Senior React Frontend Developer",
+            dateRange: "Jan 2018 - Present",
+            responsibilities: [
+                "Architect, build, and maintain custom React and Next.js applications and websites",
+                "Optimize web performance, accessibility, and SEO (Lighthouse, best practices)",
+                "Manage client relationships, project scopes, and agile workflows"
+            ]
+        },
+        {
             company: "Cerberus Tech",
             position: "Senior Frontend Developer",
-            dateRange: "Mar 2024 - Present",
+            dateRange: "Mar 2024 - Jun 2025",
             responsibilities: [
                 "Developing and maintaining the frontend application",
                 "Helping to standardize the codebase and improve the workflow",
