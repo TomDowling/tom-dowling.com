@@ -35,7 +35,7 @@ export default function Page() {
                             <div className="relative h-[350px] w-[350px] rounded-full bg-gradient-to-b from-rose-500 to-orange-300 p-1">
                                 <div className="absolute inset-1 rounded-full bg-background flex items-center justify-center">
                                     <Image
-                                        src="/assets/images/avatar.jpg"
+                                        src="/assets/images/avatar.png"
                                         width={300}
                                         height={300}
                                         alt="Tom Dowling"
@@ -356,7 +356,7 @@ export default function Page() {
                     <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
                         <div className="flex items-center justify-center">
                             <Image
-                                src="/assets/images/avatar.jpg"
+                                src="/assets/images/avatar.png"
                                 width={500}
                                 height={500}
                                 alt="Tom Dowling"
@@ -367,7 +367,7 @@ export default function Page() {
                             <div className="space-y-2">
                                 <div className="inline-block rounded-lg bg-rose-100 px-3 py-1 text-sm text-rose-500">About Me</div>
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                                    React Developer with 9+ Years Experience
+                                    React Developer with 10+ Years Experience
                                 </h2>
                                 <p className="text-muted-foreground">
                                     As a Senior Frontend Developer with years of experience, I specialize in crafting robust, scalable, and
@@ -449,7 +449,9 @@ export default function Page() {
                             <div className="rounded-lg border bg-background p-6 shadow-sm">
                                 <h3 className="font-semibold mb-4">Availability</h3>
                                 <p className="text-sm text-muted-foreground mb-2">Currently available for freelance projects starting:</p>
-                                <p className="font-medium text-rose-500">June 2025</p>
+                                <p className="font-medium text-rose-500">
+                                    {new Date().toLocaleDateString("en-GB", { month: "long", year: "numeric" })}
+                                </p>
                                 <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
                                     <div>
                                         <p className="font-medium">Project Type</p>

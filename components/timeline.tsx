@@ -22,6 +22,16 @@ export function Timeline() {
             ]
         },
         {
+            company: "Quantum",
+            position: "Lead Developer",
+            dateRange: "Sep 2025 - Present",
+            responsibilities: [
+                "Leading the team, including setting the coding standards and guidelines",
+                "Working closely with the product team to deliver the best possible experience",
+                "Pushing web standards and performance in the digital space"
+            ]
+        },
+        {
             company: "Cerberus Tech",
             position: "Senior Frontend Developer",
             dateRange: "Mar 2024 - Jun 2025",
