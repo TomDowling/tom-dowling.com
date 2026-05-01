@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Code2, Github, Linkedin, Menu } from "lucide-react"; // Import Menu icon
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
@@ -46,8 +45,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <GoogleTagManager gtmId="GTM-P95QKTJ" />
-            <Head>
+            <body>
+                <GoogleTagManager gtmId="GTM-P95QKTJ" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -72,8 +71,6 @@ export default function RootLayout({
                         })
                     }}
                 />
-            </Head>
-            <body>
                 <div className="flex min-h-screen flex-col">
                     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
                         <div className="container mx-auto flex h-16 items-center px-4 space-x-4 justify-between sm:space-x-0 sm:px-0">

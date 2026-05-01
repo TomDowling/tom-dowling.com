@@ -1,7 +1,6 @@
 import posts from "./../posts.json";
 import { IPost } from "../page";
 import { notFound } from "next/navigation";
-import Head from "next/head";
 import { Metadata } from "next";
 
 export function getBlogPostBySlug(slug: string) {
